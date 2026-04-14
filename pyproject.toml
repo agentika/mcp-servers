@@ -5,8 +5,8 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "gradio>=6.12.0",
     "anyio>=4.13.0",
-    "gradio>=5.23.1",
     "notemcp",
     "openai-agents>=0.0.7",
     "planningmcp",
