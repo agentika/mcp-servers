@@ -5,8 +5,8 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "anyio>=4.9.0",
     "gradio>=6.12.0",
+    "anyio>=4.13.0",
     "notemcp",
     "openai-agents>=0.0.7",
     "planningmcp",
@@ -31,7 +31,6 @@ planningmcp = { workspace = true }
 notemcp = { workspace = true }
 
 [tool.ruff]
-exclude = ["build"]
 line-length = 120
 
 [tool.ruff.lint]
@@ -62,10 +61,10 @@ ignore_missing_imports = true
 [dependency-groups]
 dev = [
     "mypy>=1.15.0",
-    "pip>=25.0.1",
+    "pip>=26.0.1",
     "types-aiofiles>=24.1.0.20250326",
     "types-pytz>=2025.2.0.20250326",
     "types-pyyaml>=6.0.12.20250326",
-    "types-simplejson>=3.20.0.20250326",
-    "types-ujson>=5.10.0.20250326",
+    "types-ujson>=5.10.0.20250822",
+    "types-simplejson>=3.20.0.20260408",
 ]
